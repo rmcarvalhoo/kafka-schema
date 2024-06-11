@@ -1,5 +1,5 @@
 # kafka-schema
-POC - Springboot, Java, Schema Registry, Apache Avro e Apache Kafka.
+## POC - Springboot, Java, Schema Registry, Apache Avro e Apache Kafka.
 The purpose of the **kafka-schema** is to configure a basic Kafka producer and consumer that will produce and consume messages from the same topic, using a pre defined avro schema for the message sent
 
 ![image](https://github.com/rmcarvalhoo/kafka-schema/assets/3673048/bcfe4dc1-de56-43a8-9e29-881d0d65a0ff)
@@ -34,3 +34,10 @@ Applications are executed using a Maven command that invokes Spring Boot initial
 - Scripts
   ### Execute docker-compose
     - ```docker compose up --build```
+
+## Use
+## Schema Registry - to validate registered avro schemas and versions
+  - http://localhost:8091
+ 
+## kafka-ui -  is a versatile, fast, and lightweight web UI for managing Apache Kafka® clusters. Built by developers, for developers
+  - http://localhost:8081  
