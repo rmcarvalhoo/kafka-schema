@@ -2,6 +2,9 @@
 POC - Springboot, Java, Schema Registry, Apache Avro e Apache Kafka.
 The purpose of the **kafka-schema** is to configure a basic Kafka producer and consumer that will produce and consume messages from the same topic, using a pre defined avro schema for the message sent
 
+![image](https://github.com/rmcarvalhoo/kafka-schema/assets/3673048/bcfe4dc1-de56-43a8-9e29-881d0d65a0ff)
+
+
 ## Theoretical foundations
 
 > Springboot: Spring Boot is a Spring project that came to facilitate the process of configuring and publishing our applications. The intention is to have your project running as quickly as possible and without complications.
