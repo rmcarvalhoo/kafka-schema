@@ -1,18 +1,33 @@
-# Getting Started
+# kafka-schema
+POC - Springboot, Java, Schema Registry, Apache Avro e Apache Kafka.
+The purpose of the **kafka-schema** is to configure a basic Kafka producer and consumer that will produce and consume messages from the same topic, using a pre defined avro schema for the message sent
 
-### Reference Documentation
-For further reference, please consider the following sections:
+## Theoretical foundations
 
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.3.0/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.3.0/maven-plugin/reference/html/#build-image)
-* [Spring for Apache Kafka](https://docs.spring.io/spring-boot/docs/3.3.0/reference/htmlsingle/index.html#messaging.kafka)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/3.3.0/reference/htmlsingle/index.html#web)
+> Springboot: Spring Boot is a Spring project that came to facilitate the process of configuring and publishing our applications. The intention is to have your project running as quickly as possible and without complications.
 
-### Guides
-The following guides illustrate how to use some features concretely:
+> Apache Kafka: Apache Kafka is an open-source stream processing platform developed by the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, high-capacity, low-latency platform for real-time data processing.
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
+> Schema Registry: The Schema Registry validates whether the message being sent by an application is compatible. We can use various file formats to create our schemas such as XML, CSV, JSON but here we will use Apache Avro which is a format developed for creating typed schemas.
 
+> Apache avro: Avro is a thread-oriented remote call and procedure serialization framework developed in Apache's Hadoop project. It uses JSON to define data types and protocols and serializes data into a binary format.
+
+> Java: Java is an object-oriented programming language developed in the 90s by a team of programmers led by James Gosling, at the company Sun Microsystems. In 2008 Java was acquired by the company Oracle Corporation.
+
+## Technologies
+- Java 21
+- Spring Boot 3.2.3
+    - spring-boot-starter-web
+    - spring-kafka
+- Apache Avro
+- Lombok
+- Tomcat (Embedded no Spring Boot)
+- Git
+
+## Executing
+
+Applications are executed using a Maven command that invokes Spring Boot initialization.
+
+- Scripts
+  ### Execute docker-compose
+    - ```docker compose up --build```
