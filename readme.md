@@ -38,6 +38,7 @@ Applications are executed using a Maven command that invokes Spring Boot initial
 ## Use
 ## Schema Registry - to validate registered avro schemas and versions
   - http://localhost:8091
+  - doc: https://avro.apache.org/docs/1.11.1/getting-started-java/#defining-a-schema
  
 ## kafka-ui -  is a versatile, fast, and lightweight web UI for managing Apache Kafka® clusters. Built by developers, for developers
   - http://localhost:8081  
